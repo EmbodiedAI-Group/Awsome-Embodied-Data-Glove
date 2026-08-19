@@ -2,37 +2,59 @@
 
 > 本列表聚焦 **数据采集手套（Data Gloves）** ，主要用于具身智能数据采集、机器人遥操作、灵巧手训练等场景。数据手套通过捕捉人手动作、触觉、力觉等多模态信息，为机器人提供高质量的人类演示数据。信息来源于各公司官网、新闻稿及公开技术文档，部分参数为估算值或未公开标注。欢迎提交 PR 补充和修正。
 
-
-
 ## 一、数据采集手套对比表
 
-| # | 产品名称 | 公司/团队 | 类型 | 自由度 | 传感器配置 | 触觉反馈 | 精度 | 价格 | 参考链接 |
-|---|---------|---------|------|--------|-----------|---------|------|------|---------|
-| 1 | [Metagloves Pro Haptic](https://www.manus-meta.com) | MANUS | 电磁追踪手套 | 25 DOF | 5个EMF传感器，6 DOF追踪 | 5个LRA振动马达，256级控制 | 毫米级 | €4,500 | [官网](https://www.manus-meta.com) |
-| 2 | [Quantum Metagloves](https://www.manus-meta.com) | MANUS | 电磁追踪手套 | 25 DOF | 量子磁性追踪技术 | 无 | 亚毫米级 | €2,500 | [官网](https://www.manus-meta.com) |
-| 3 | [ContactGlove3 Pro](https://store.diver-x.jp/en) | Diver-X（日本） | 电磁追踪手套 | 未公开 | 电磁场追踪方案 | 无 | 0.5mm位置，0.4°方向 | $3,999 | [IT之家报道](https://www.ithome.com/0/969/999.htm) |
-| 4 | [ContactGlove3](https://store.diver-x.jp/en) | Diver-X（日本） | VR控制手套 | 未公开 | 电磁场追踪方案 | 无 | 0.5mm位置，0.4°方向 | $699.99 | [IT之家报道](https://www.ithome.com/0/969/999.htm) |
-| 5 | [PXCap V](https://mall-test.paxini.com) | 帕西尼（PaXini） | 触觉数据采集手套 | 82 DOF | 30个六维触觉模组，3015个触觉点 | 是 | 高精度轨迹重建 | 未公开 | [百度百科](https://baike.baidu.com/item/PXCap%20%E2%85%A4/67963505) |
-| 6 | [PXCap III](https://mall-test.paxini.com) | 帕西尼（PaXini） | 三指数据采集手套 | 与PXDex III同构 | 10个6D霍尔阵列触觉传感器 | 是 | ±0.15°关节精度 | 未公开 | [Leaderobot报道](https://leaderobot.com/news/8078) |
-| 7 | [SenseGlove R1](https://www.senseglove.com) | SenseGlove | 力反馈手套 | 40 DOF追踪 | 力觉+触觉传感器 | 主动力反馈+振动触觉 | 毫米级 | 未公开 | [官网](https://www.senseglove.com) |
-| 8 | [HANDX智能触觉手套](https://baijiahao.baidu.com/s?id=1872037094542437909&wfr=spider&for=pc) | 手智创新 | 柔性织物传感手套 | 未公开 | 45个高精度指尖触觉点位（可扩展至800个） | 是 | 10%FS重复精度 | ¥5,999/双 | [手智创新全新一代智能触觉手套发布](https://cn.chinadaily.com.cn/a/202607/29/WS6a69c936a310d709c2fc06d5.html) |
-| 9 | [柔性织物数据手套](https://www.yotlive.com.cn/) | 尧乐科技 | 柔性织物传感手套 | 未公开 | 金属纱线+三明治矩阵传感器 | 是 | 最高100感应点/cm² | 未公开 | [搜狐网相关报道](https://www.sohu.com/a/1056052270_114778) |
-| 10 | [数据采集手套](https://www.szrenben.com) | 人本国际 | 柔性传感手套 | 未公开 | 分布式压力传感阵列 | 是 | 高精度关节角度捕捉 | 未公开 | [官网](https://www.szrenben.com) |
-| 11 | [灵初智能数据采集手套](https://www.163.com) | 灵初智能 | 多模态数据手套 | 21 DOF | 高精度触觉传感器+头戴/手部视觉 | 是 | 亚毫米级 | 未公开 | [和讯网WAIC专访](https://m.hexun.com) |
-| 12 | [EG机械外骨骼手套](https://cn.honpine.com) | 鸿磐（Honpine） | 外骨骼手套 | 15关节 | 15个磁编码器（每指3个），16-bit编码器 | 无 | 高精度 | 未公开 | [产品页](https://cn.honpine.com/products/High-Precision-Control-Industrial-Robot-End-Effector/Dexterous-Robot-Hand/High-Precision-Teleoperation-Mechanical-Exoskeleton-Glove.html) |
-| 13 | [遥操作手套](https://cn.honpine.com) | 鸿磐（Honpine） | 动作捕捉手套 | 15关节 | 15个磁编码器，动态映射算法 | 无 | 高精度 | 未公开 | [产品页](https://cn.honpine.com) |
-| 14 | [CyberGlove IV](https://www.axis3d.com.cn) | CyberGlove Systems | 光学/惯性数据手套 | 22 DOF | HyperSensor™无线专利技术 | 无 | 高精度 | 未公开 | [Axis3D产品页](http://www.axis3d.com.cn) |
-| 15 | [UDCAP DataGlove R1](https://www.udexreal.cn/h-col-118.html) | 宇叠科技（UDCAP） | 超感数据手套 | 未公开 | 柔性传感器 | 无 | 0.01°分辨率 | 未公开 | [产品主页](https://www.udexreal.cn/h-col-118.html) |
-| 16 | [ProGlove 1.0](https://www.producthunt.com) | Proception | 纺织触觉手套 | 未公开 | 触觉传感"皮肤" | 是 | 高精度 | 未公开 | [36氪报道](https://36kr.com) |
-| 17 | [同构掌心遥操手套](https://beingbeyond.com) | 智在无界（BeingBeyond） | 遥操作手套 | 未公开 | 同构掌心遥操技术 | 未公开 | 0.1mm动态追踪 | 未公开 | [雷锋网报道](https://m.leiphone.com) |
-| 18 | [中科慧思数据手套](https://cn.chinadaily.com.cn) | 中科慧思 | 数据采集配套工具 | 未公开 | 未公开 | 未公开 | 未公开 | 未公开 | [中国日报报道](https://cn.chinadaily.com.cn) |
-| 19 | [OSMO](https://ieeexplore.ieee.org) | 学术开源（IEEE） | 开源触觉手套 | 未公开 | 12个三轴触觉传感器（指尖+掌心） | 是 | 高精度 | 开源 | [IEEE Xplore](https://ieeexplore.ieee.org) |
-| 20 | [ART-Glove](https://arxiv.org) | 卡内基梅隆大学 | articulated触觉手套 | 22 DOF | 16个刚性功能表面，2048个触觉单元 | 是 | 120Hz同步采集 | 开源 | [arXiv](https://arxiv.org) |
-| 21 | [独立版外骨骼手套](https://io-ai.tech/telexperience/docs/glove2/specs/) | 艾欧智能（AION） | 外骨骼手套 | 21关节 | 磁编码器+加速度计+陀螺仪 | 5手指10级震动反馈 | 1.0±0.2° | 未公开 | [产品规格页](https://io-ai.tech/telexperience/docs/glove2/specs/) |
-| 22 | [Hi5 2.0 VR交互手套](https://www.noitom.com.cn/news/2022051101.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 7颗9轴高性能惯性传感器/每手 | 腕部1个可编程振子 | 滚转/俯仰1.0°，偏航2.0° | 未公开 | [官网新闻](https://www.noitom.com.cn/news/2022051101.html) |
-| 23 | [PN S 动捕手套](https://www.noitom.com.cn/perception-neuron-studio.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 6枚高精度惯性传感器/每手 | 未公开 | 静态精度Roll/Pitch 0.7°，Yaw 2° | 未公开 | [PN Studio产品页](https://www.noitom.com.cn/perception-neuron-studio.html) |
-| 24 | [PN 3 动作捕捉手套](https://shop.noitom.com.cn/html/215.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 12节点惯性传感器 | 未公开 | 静态姿态精度1.0°/2.0° | 未公开 | [官方商城](https://shop.noitom.com.cn/html/215.html) |
-| 25 | **[织物触觉智能手套](https://www.sohu.com/a/934651007_120988576)** | **南山智尚** | **柔性织物传感手套** | **未公开** | **整手5×9=45个传感点，柔性传感+感驱一体纤维** | **是（力反馈）** | **灵敏度5kPa⁻¹，延迟<0.5ms** | **未公开** | [发布会报道](https://www.sohu.com/a/934651007_120988576) |
+| # | 产品名称 | 公司/团队 | 类型 | 自由度 | 传感器配置 | 触觉/力觉采集 | 反馈方式 | 精度 | 价格 |
+|---|---------|---------|------|--------|-----------|-------------|---------|------|------|
+| 1 | [Metagloves Pro Haptic](https://www.manus-meta.com) | MANUS（荷兰） | 电磁追踪手套 | 25 DOF | 5个EMF传感器，6 DOF追踪 | 是（高精度手部动作采集） | **振动**（5个LRA马达，256级强度，120Hz控制率） | 毫米级 | €4,500 |
+| 2 | [Quantum Metagloves](https://www.manus-meta.com) | MANUS（荷兰） | 电磁追踪手套 | 25 DOF | 量子磁性追踪技术 | 是（高精度手部动作采集） | 无 | 亚毫米级 | €2,500 |
+| 3 | [ContactGlove3 Pro](https://store.diver-x.jp/en) | Diver-X（日本） | 电磁追踪手套 | 未公开 | 电磁场追踪方案 | 是（手部动作采集） | 无 | 0.5mm位置，0.4°方向 | $3,999 |
+| 4 | [ContactGlove3](https://store.diver-x.jp/en) | Diver-X（日本） | VR控制手套 | 未公开 | 电磁场追踪方案 | 是（手部动作采集） | 无 | 0.5mm位置，0.4°方向 | $699.99 |
+| 5 | [PXCap V](https://mall-test.paxini.com) | 帕西尼感知科技（PaXini） | 触觉数据采集手套 | 82 DOF | 30个六维触觉模组，3015个触觉点 | **是**（15种维度触觉感知+手部姿态/关节运动） | 无（纯采集） | 高精度轨迹重建 | 未公开 |
+| 6 | [PXCap III](https://mall-test.paxini.com) | 帕西尼感知科技（PaXini） | 三指数据采集手套 | 与PXDex III同构 | 10个6D霍尔阵列触觉传感器 | **是**（6D霍尔阵列触觉传感，精度0.1N） | 无（纯采集） | ±0.15°关节精度 | 未公开 |
+| 7 | [PXCap Pro](https://mall-test.paxini.com) | 帕西尼感知科技（PaXini） | 五指数据采集手套 | 未公开 | 多维触觉+AI视觉双模态 | **是**（多维触觉感知） | 无（纯采集） | 高精度 | 未公开 |
+| 8 | [SenseGlove R1](https://www.senseglove.com) | SenseGlove（荷兰） | 力反馈手套 | 40 DOF追踪 | 力觉+触觉传感器 | **是**（抓握力传感、压力传感） | **主动力反馈（4指）+ 振动（8个LRA）** | 毫米级 | 未公开 |
+| 9 | [HANDX智能触觉手套](https://baijiahao.baidu.com/s?id=1872037094542437909&wfr=spider&for=pc) | 手智创新 | 柔性织物传感手套 | 未公开 | 45个高精度指尖触觉点位（可扩展至800个） | **是**（触觉传感，重复精度10%FS） | 无（纯采集） | 10%FS重复精度 | ¥5,999/双 |
+| 10 | [柔性织物数据手套](https://www.yotlive.com.cn/) | 尧乐科技 | 柔性织物传感手套 | 未公开 | 金属纱线+三明治矩阵传感器 | **是**（触觉传感，最高100感应点/cm²） | 无（纯采集） | 最高100感应点/cm² | 未公开 |
+| 11 | [数据采集手套](https://www.szrenben.com) | 人本国际 | 柔性传感手套 | 未公开 | 分布式压力传感阵列 | **是**（压力传感+关节角度捕捉） | 无（纯采集） | 高精度关节角度捕捉 | 未公开 |
+| 12 | [灵初智能数据采集手套](https://www.psibot.ai/products_zh/product_psibot-h1_zh/) | 灵初智能（PsiBot） | 多模态数据手套 | 21 DOF | 高精度触觉传感器+头戴/手部视觉 | **是**（触觉+视觉多模态采集） | 无（纯采集） | 亚毫米级 | 未公开 |
+| 13 | [EG机械外骨骼手套](https://cn.honpine.com) | 鸿磐（Honpine） | 外骨骼手套 | 15关节 | 15个磁编码器（每指3个），16-bit编码器 | 是（关节角度采集） | 无 | 高精度 | 未公开 |
+| 14 | [遥操作手套](https://cn.honpine.com) | 鸿磐（Honpine） | 动作捕捉手套 | 15关节 | 15个磁编码器，动态映射算法 | 是（关节角度采集） | 无 | 高精度 | 未公开 |
+| 15 | [CyberGlove IV](http://www.axis3d.com.cn) | CyberGlove Systems（美国） | 光学/惯性数据手套 | 22 DOF | HyperSensor™无线专利技术 | 是（手部动作采集） | 无 | 高精度 | 未公开 |
+| 16 | [UDCAP DataGlove R1](https://www.udexreal.cn/h-col-118.html) | 宇叠科技（UDCAP） | 超感数据手套 | 未公开 | 柔性传感器 | 是（柔性传感，0.01°分辨率） | 无 | 0.01°分辨率 | 未公开 |
+| 17 | [ProGlove 1.0](https://www.producthunt.com) | Proception | 纺织触觉手套 | 未公开 | 触觉传感"皮肤" | **是**（触觉传感） | 无（纯采集） | 高精度 | 未公开 |
+| 18 | [同构掌心遥操手套](https://beingbeyond.com) | 智在无界（BeingBeyond） | 遥操作手套 | 未公开 | 同构掌心遥操技术 | 是（手部动作追踪） | 未公开 | 0.1mm动态追踪 | 未公开 |
+| 19 | [中科慧思数据手套](https://baijiahao.baidu.com/s?id=1873011200555552221&wfr=spider&for=pc) | 中科慧思 | 数据采集配套工具 | 未公开 | 未公开 | 未公开 | 未公开 | 未公开 | 未公开 |
+| 20 | [OSMO](https://arxiv.org/pdf/2512.08920)| 学术开源（IEEE） | 开源触觉手套 | 未公开 | 12个三轴触觉传感器（指尖+掌心） | **是**（触觉传感） | 无（纯采集） | 高精度 | 开源 |
+| 21 | [ART-Glove](https://linchangyi1.github.io/ART-Glove/) | 卡内基梅隆大学 | articulated触觉手套 | 22 DOF | 16个刚性功能表面，2048个触觉单元 | **是**（触觉传感，120Hz同步采集） | 无（纯采集） | 120Hz同步采集 | 开源 |
+| 22 | [独立版外骨骼手套](https://io-ai.tech/telexperience/docs/glove2/specs/) | 艾欧智能（AION） | 外骨骼手套 | 21关节 | 磁编码器+加速度计+陀螺仪 | 是（关节角度+惯性采集） | **振动**（5手指10级震动反馈） | 1.0±0.2° | 未公开 |
+| 23 | [Hi5 2.0 VR交互手套](https://www.noitom.com.cn/news/2022051101.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 7颗9轴高性能惯性传感器/每手 | 是（惯性动作采集） | **振动**（腕部1个可编程振子） | 滚转/俯仰1.0°，偏航2.0° | 未公开 |
+| 24 | [PN S 动捕手套](https://www.noitom.com.cn/perception-neuron-studio.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 6枚高精度惯性传感器/每手 | 是（惯性动作采集） | 未公开 | 静态精度Roll/Pitch 0.7°，Yaw 2° | 未公开 |
+| 25 | [PN 3 动作捕捉手套](https://shop.noitom.com.cn/html/215.html) | 诺亦腾（Noitom） | 惯性动捕手套 | 未公开 | 12节点惯性传感器 | 是（惯性动作采集） | 未公开 | 静态姿态精度1.0°/2.0° | 未公开 |
+| 26 | [织物触觉智能手套](https://www.sohu.com/a/934651007_120988576) | 南山智尚 | 柔性织物传感手套 | 未公开 | 整手5×9=45个传感点，柔性传感+感驱一体纤维 | **是**（触觉传感，灵敏度5kPa⁻¹） | 是（力反馈） | 灵敏度5kPa⁻¹，延迟<0.5ms | 未公开 |
+| 27 | [Smartgloves II](https://www.rokoko.com/products/smartgloves-ii) | Rokoko（丹麦） | 无线手部动作捕捉手套 | 25+ DOF | IMU + EMF传感器融合（7传感器/手套），250Hz采样 | 是（高精度手指/手腕追踪） | 无（纯动作捕捉） | 手腕追踪精度提升3倍（1.5mm→0.47mm） | $4,795（+Coil Pro） |
+
+
+## 反馈方式分类总览
+
+| 反馈类型 | 说明 | 代表产品 |
+|---------|------|---------|
+| **无反馈（纯采集）** | 仅触觉/力觉/运动数据采集，无任何反馈执行器 | PXCap系列、HANDX、尧乐科技、人本国际、灵初智能、EG机械外骨骼手套、CyberGlove IV、UDCAP DataGlove R1、ProGlove 1.0、OSMO、ART-Glove、Rokoko Smartgloves II、Quantum Metagloves、ContactGlove3系列 |
+| **振动反馈** | 通过LRA等振动马达提供触觉提示 | Metagloves Pro Haptic（5×LRA，256级强度）、Hi5 2.0（腕部振子）、独立版外骨骼手套（10级震动） |
+| **主动力反馈 + 振动** | 振动提示 + 主动施力/阻力模拟 | SenseGlove R1（4指主动力反馈+8个LRA振动） |
+| **反馈方式待确认** | 产品具备触觉采集能力，但反馈方式未明确标注 | 南山智尚织物触觉智能手套、同构掌心遥操手套、中科慧思数据手套 |
+
+
+## 核心概念说明
+
+### 触觉采集（输入） vs 触觉反馈（输出）
+
+| 概念 | 方向 | 说明 | 代表产品 |
+|------|------|------|---------|
+| **触觉/力觉采集** | 输入 | 手套读取压力、接触力、关节角度等数据 | PXCap V（30个六维触觉模组）、HANDX（45个高精度指尖触觉传感器） |
+| **触觉反馈** | 输出 | 通过振动、阻力或主动施力让佩戴者产生感觉 | SenseGlove R1（主动力反馈+振动触觉）、Metagloves Pro Haptic（5个LRA振动马达） |
+
+
 ## 各产品详情与链接说明
 
 ### 1. MANUS — Metagloves Pro Haptic / Quantum Metagloves
@@ -73,7 +95,12 @@
 - **具体产品页**：[高精度遥操作机械外骨骼手套](https://cn.honpine.com/products/High-Precision-Control-Industrial-Robot-End-Effector/Dexterous-Robot-Hand/High-Precision-Teleoperation-Mechanical-Exoskeleton-Glove.html)
 - **产品介绍**：配备 15 个磁编码器，每根手指 3 个，覆盖外展、掌指关节和远端指间关节三个维度。16-bit 高精度编码器，采用 ESP-NOW 无线传输，通信频率 20~30Hz[reference:2]。
 
-
+### Rokoko Smartgloves II 
+    专业级无线手部与手指动作捕捉手套，采用IMU+EMF传感器融合技术（每只手套7个传感器），内部IMU采样率提升至250Hz。手腕追踪精度提升3倍（从1.5mm降至0.47mm）。
+  **关键特性**：
+  - **纯动作捕捉**：专注于高精度手指和手腕追踪
+  - **无触觉反馈**：不具备振动、阻力或主动力反馈功能
+  - **适用场景**：机器人遥操作、灵巧操作、AI训练数据采集
 
 ## 二、数据采集手套主要类型
 
