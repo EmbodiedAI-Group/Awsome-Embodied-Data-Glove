@@ -95,12 +95,13 @@
 - **具体产品页**：[高精度遥操作机械外骨骼手套](https://cn.honpine.com/products/High-Precision-Control-Industrial-Robot-End-Effector/Dexterous-Robot-Hand/High-Precision-Teleoperation-Mechanical-Exoskeleton-Glove.html)
 - **产品介绍**：配备 15 个磁编码器，每根手指 3 个，覆盖外展、掌指关节和远端指间关节三个维度。16-bit 高精度编码器，采用 ESP-NOW 无线传输，通信频率 20~30Hz[reference:2]。
 
-### Rokoko Smartgloves II 
-    专业级无线手部与手指动作捕捉手套，采用IMU+EMF传感器融合技术（每只手套7个传感器），内部IMU采样率提升至250Hz。手腕追踪精度提升3倍（从1.5mm降至0.47mm）。
+### 8. Rokoko Smartgloves II 
+  **官网**: https://www.rokoko.com/products/smartgloves-ii
+  **产品介绍** 专业级无线手部与手指动作捕捉手套，采用IMU+EMF传感器融合技术（每只手套7个传感器），内部IMU采样率提升至250Hz。手腕追踪精度提升3倍（从1.5mm降至0.47mm）。
   **关键特性**：
-  - **纯动作捕捉**：专注于高精度手指和手腕追踪
-  - **无触觉反馈**：不具备振动、阻力或主动力反馈功能
-  - **适用场景**：机器人遥操作、灵巧操作、AI训练数据采集
+    - **纯动作捕捉**：专注于高精度手指和手腕追踪
+    - **无触觉反馈**：不具备振动、阻力或主动力反馈功能
+    - **适用场景**：机器人遥操作、灵巧操作、AI训练数据采集
 
 ## 二、数据采集手套主要类型
 
